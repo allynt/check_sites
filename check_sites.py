@@ -3,7 +3,7 @@ __author__="allyn.treshansky"
 """
 stand-alone script to check the status of a bunch of websites
 requires a configuration file "~/check_sites.conf" which specifies who to email log to
-requeres a configuration file "./check_sites.json" which defines the sites to check
+requires a configuration file "./check_sites.json" which defines the sites to check
 note - the entries in "check_sites.json" must be completely well-formed URLs (ie: "http://google.com" as opposed to "google.com")
 """
 
@@ -44,7 +44,7 @@ sites_file = None
 verbose = False
 
 try:
-    opts, args = getopt.getopt(sys.argv[1:], 's:v')
+    opts, args = getopt.getopt(sys.argv[1:], 'f:v')
 except getopt.GetoptError as err:
     print(err)
     usage()
@@ -54,7 +54,7 @@ for o, a in opts:
     if o == '-h':
         usage()
         sys.exit(2)
-    elif o == '-s':
+    elif o == '-f':
         sites_file = rel(a)
     elif o == '-v':
         verbose = True
