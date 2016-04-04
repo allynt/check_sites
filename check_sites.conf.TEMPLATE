@@ -1,0 +1,5 @@
+[email]
+host=smtp.gmail.com
+port=587
+username=MY EMAIL ADDRESS
+password=MY PWD (use 2-step-verification app pwd as needed)
