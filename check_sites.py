@@ -82,6 +82,8 @@ for site in sites:
     try:
         request = urllib2.urlopen(site["url"])
         code = request.code
+        # if you wanted to add more logic or fine-grained detail to the log
+        # here is where you would do it; using a bunch of if statments on 'code'
         site.update({
             "code": code,
             "up": True,
