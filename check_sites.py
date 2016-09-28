@@ -2,8 +2,8 @@ __author__="allyn.treshansky"
 
 """
 stand-alone script to check the status of a bunch of websites
-requires a configuration file "~/check_sites.conf" which specifies who to email log to
-requires a configuration file "./check_sites.json" which defines the sites to check
+requires a configuration file "check_sites.conf" which specifies who to email log to
+requires a configuration file "check_sites.json" which defines the sites to check
 note - the entries in "check_sites.json" must be completely well-formed URLs (ie: "http://google.com" as opposed to "google.com")
 """
 
